@@ -1,20 +1,34 @@
-# laradoctors-web
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a><a href="https://nuxtjs.org" target="_blank"><img src="https://nuxtjs.org/logos/nuxtjs-typo.svg" height="50" width="300"></a></p>
 
-## Build Setup
 
+## About Laradoctors
+
+It is a simple Nuxt Application\
+To Doctors and Patients Scheduling
+
+##Installation
 ```bash
+## Build Setup
 # install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
 # build for production and launch server
 $ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+$ yarn start --port 3000
 ```
+### To test use this app
+https://github.com/GahFlorencio/laradoctors
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+### Host
+Put on your hosts configuration this name
+
+127.0.0.1 http://api.laradoctors.test
+
+###System User
+email : jonh.admin@email.com
+password: secret
+
+
+
+
+
