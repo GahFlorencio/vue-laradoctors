@@ -2,6 +2,12 @@ export default {
   env: {
     baseUrl: process.env.API_URL || 'http://localhost:3000'
   },
+
+  server: {
+    host: "0.0.0.0",
+    port: "3005"
+  },
+  
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'laradoctors-web',
