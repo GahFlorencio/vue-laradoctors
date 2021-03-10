@@ -83,7 +83,7 @@ export default {
       }
 
       self.$axios
-        .get(`http://api.laradoctors.test/api/users/${user_id}`, {
+        .get(`${process.env.baseUrl}/api/users/${user_id}`, {
           Authorization: token,
         })
         .then((response) => {
@@ -97,7 +97,7 @@ export default {
         });
 
       self.$axios
-        .get(`http://api.laradoctors.test/api/types`, {
+        .get(`${process.env.baseUrl}/api/types`, {
           Authorization: token,
         })
         .then((response) => {
@@ -125,7 +125,7 @@ export default {
       }
 
       self.$axios
-        .put(`http://api.laradoctors.test/api/users/${user_id}`, self.form, {
+        .put(`${process.env.baseUrl}/api/users/${user_id}`, self.form, {
           Authorization: token,
         })
         .then((response) => {
