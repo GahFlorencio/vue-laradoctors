@@ -132,9 +132,8 @@ export default {
       if (process.browser) {
         token = localStorage.getItem("auth._token.laravelJWT");
       }
-
       self.$axios
-        .get(`http://api.laradoctors.test/api/${self.model}`, {
+        .get(`${process.env.baseUrl}/api/${self.model}`, {
           Authorization: token,
           params: {
             queryParams: this.queryParams,

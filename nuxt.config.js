@@ -1,4 +1,7 @@
 export default {
+  env: {
+    baseUrl: process.env.API_URL || 'http://localhost:3000'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'laradoctors-web',
@@ -46,7 +49,7 @@ export default {
    auth: {
     strategies: {
       'laravelJWT': {
-        url: 'http://api.laradoctors.test',
+        url: process.env.API_URL,
         token: {
           property: 'access_token',
           maxAge: 60 * 60

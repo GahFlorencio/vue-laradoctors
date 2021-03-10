@@ -75,7 +75,7 @@ export default {
       }  
 
       self.$axios
-        .get(`http://api.laradoctors.test/api/doctors`, {
+        .get(`${process.env.baseUrl}/api/doctors`, {
           Authorization: token,
         })
         .then((response) => {
@@ -103,7 +103,7 @@ export default {
       }
 
       self.$axios
-        .post(`http://api.laradoctors.test/api/disponibilities`, {
+        .post(`${process.env.baseUrl}/api/disponibilities`, {
           user_id : this.form.user_id,
           date: `${this.form.date} ${this.form.time}`
         }, {

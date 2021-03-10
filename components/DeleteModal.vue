@@ -36,7 +36,7 @@ export default {
 
       self.$axios
         .delete(
-          `http://api.laradoctors.test/api/${self.resource}/${self.resource_id}`,
+          `${process.env.baseUrl}/api/${self.resource}/${self.resource_id}`,
           self.form,
           {
             Authorization: token,

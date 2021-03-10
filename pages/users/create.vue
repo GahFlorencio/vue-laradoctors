@@ -98,7 +98,7 @@ export default {
       }
 
       self.$axios
-        .get(`http://api.laradoctors.test/api/types`, {
+        .get(`${process.env.baseUrl}/api/types`, {
           Authorization: token,
         })
         .then((response) => {
@@ -126,7 +126,7 @@ export default {
       }
 
       self.$axios
-        .post(`http://api.laradoctors.test/api/users`, self.form, {
+        .post(`${process.env.baseUrl}/api/users`, self.form, {
           Authorization: token,
         })
         .then((response) => {

@@ -22,7 +22,7 @@ https://github.com/GahFlorencio/laradoctors
 ### Host
 Put on your hosts configuration this name
 
-127.0.0.1 http://api.laradoctors.test
+127.0.0.1 http://api.gcsdi.com.br
 
 ###System User
 email : jonh.admin@email.com
